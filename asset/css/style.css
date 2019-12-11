@@ -1,0 +1,217 @@
+/*Templates*/
+.fullscreen{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 100%;
+}
+.box-table{
+	margin: 0px auto;
+	width: 70%;
+	max-height: 600px;
+	overflow: auto;
+}
+.loader-box{
+	z-index: 1;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0, 0, 0, .2);
+}
+.loader-box .loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	width: 50px;
+	height: 50px;
+	background-color: #EB3737;
+	animation: rotating 1s linear infinite;
+}
+.loader-box h5{
+	line-height: 120vh;
+}
+
+/*Component*/
+.consolas{
+	font-family: consolas;
+}
+.f-b{
+	font-weight: bold;
+}
+.m-p{
+	cursor: pointer;
+}
+.ho-m:hover{
+	opacity: .5;
+}
+.hs-m{
+	transition: .2s;
+}
+.hs-m:hover{
+	transform: scale(1.1);
+}
+.fd{
+	font-size: 13px !important;
+}
+
+/*Animation*/
+.floating{
+	animation: floating 5s infinite ease-in-out;
+}
+
+/*Scrollbar*/
+/* width */
+.scrollbar::-webkit-scrollbar {width: 3px;}
+/* Track */
+.scrollbar::-webkit-scrollbar-track {background: #FFF;}
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {background: #D8D8D8;}
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {background: #555;}
+
+/*Multi level dropdown*/
+/*.dropdown-submenu{
+	position: relative;
+}
+.dropdown-submenu .dropdown-menu{
+	top: 0;
+	left: 100%;
+}*/
+
+/*Default Device*/
+/*Login*/
+
+/*Complaint*/
+.custom-jumbotron{
+	height: 600px;
+	background-color: #E7E7E7;
+	background-image: linear-gradient(-40deg, #FBA1B8, #FB6363, #ED5431);
+}
+.custom-jumbotron h1{
+	margin-top: 180px;
+	font-size: 80px;
+	letter-spacing: 10px;
+}
+.custom-jumbotron p{
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+.banner{
+	margin: 0px auto;
+	width: 500px;
+	height: 400px;
+	background-image: url(../image/telvis.png);
+	background-size: contain;
+}
+
+.custom-card{
+	margin: 30px auto;
+	width: 100%;
+	background-color: #554AAB;
+	box-shadow: 0 0 0 0 rgba(20, 20, 20, 0.1);
+	animation: pulseGallery 1.5s infinite;
+}
+.img-icon{
+	margin: 20px auto;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: #FFF;
+}
+
+.content-3{
+	height: 600px;
+	background-color: #560E99;
+	background-image: url(../image/megaphone.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.content-3 a{
+	margin-top: 250px;
+	font-size: 25px;
+	transition: .2s;
+}
+
+/*Admin*/
+.profile .dropdown-menu{
+	left: -110px;
+}
+
+/*Teknisi*/
+
+
+/*Tablet*/
+@media screen and (min-width: 451px) and (max-width: 1024px){
+	/*Login*/
+
+	/*Complaint*/
+
+	/*Admin*/
+
+	/*Teknisi*/
+}
+
+
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 450px){
+	/*Templates*/
+	.box-table{
+		width: 100%;
+	}
+
+	/*Multi level dropdown*/
+	.dropdown-submenu .dropdown-menu{
+		top: 75px;
+		left: auto;
+		margin-left: -1px;
+	}
+
+
+	/*Login*/
+
+	/*Complaint*/
+	.jumbotron h1{
+		font-size: 50px;
+	}
+	.jumbotron p{
+		font-size: 16px;
+	}
+
+	.banner{
+		width: 350px;
+		height: 300px;
+	}
+
+	/*Admin*/
+
+	/*Teknisi*/
+}
+
+/*Keyframes*/
+@keyframes rotating{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes pulseGallery{
+	0%{
+		box-shadow: 0 0 0 0 rgba(20, 20, 20, 0.7);
+	}
+	70%{
+		box-shadow: 0 0 0 15px rgba(20, 20, 20, 0);
+	}
+	100%{
+		box-shadow: 0 0 0 0 rgba(20, 20, 20, 0);
+	}
+}
